@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Suyogya Shrestha
+ * @author USER
  */
 public class LoginForm extends javax.swing.JFrame {
 
@@ -29,7 +29,7 @@ public class LoginForm extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel8 = new javax.swing.JPanel();
-        WelcomeLabel = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         UserTF = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
@@ -38,17 +38,16 @@ public class LoginForm extends javax.swing.JFrame {
         ContButton = new javax.swing.JButton();
         jLabel32 = new javax.swing.JLabel();
         PassTF = new javax.swing.JPasswordField();
-        UsernameLabel = new javax.swing.JLabel();
-        PasswordLabel = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
         goToReg = new javax.swing.JButton();
         ErrorLabel = new javax.swing.JLabel();
-        ExitButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jPanel9 = new javax.swing.JPanel();
-        IconLabel = new javax.swing.JLabel();
-        LogoLabel = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
-        CopyrightLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -58,9 +57,9 @@ public class LoginForm extends javax.swing.JFrame {
 
         jPanel8.setBackground(new java.awt.Color(0, 0, 102));
 
-        WelcomeLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        WelcomeLabel.setForeground(new java.awt.Color(255, 255, 255));
-        WelcomeLabel.setText("WELCOME");
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("WELCOME");
 
         jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
@@ -116,13 +115,13 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        UsernameLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        UsernameLabel.setForeground(new java.awt.Color(255, 255, 255));
-        UsernameLabel.setText("Username:");
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("Username:");
 
-        PasswordLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        PasswordLabel.setForeground(new java.awt.Color(255, 255, 255));
-        PasswordLabel.setText("Password:");
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setText("Password:");
 
         goToReg.setText("Register");
         goToReg.addActionListener(new java.awt.event.ActionListener() {
@@ -133,17 +132,17 @@ public class LoginForm extends javax.swing.JFrame {
 
         ErrorLabel.setForeground(new java.awt.Color(255, 0, 0));
 
-        ExitButton.setBackground(new java.awt.Color(0, 0, 102));
-        ExitButton.setFont(new java.awt.Font("Segoe Print", 1, 24)); // NOI18N
-        ExitButton.setForeground(new java.awt.Color(255, 255, 255));
-        ExitButton.setText("X");
-        ExitButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        ExitButton.setBorderPainted(false);
-        ExitButton.setFocusPainted(false);
-        ExitButton.setRequestFocusEnabled(false);
-        ExitButton.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setBackground(new java.awt.Color(0, 0, 102));
+        jButton1.setFont(new java.awt.Font("Segoe Print", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("X");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.setBorderPainted(false);
+        jButton1.setFocusPainted(false);
+        jButton1.setRequestFocusEnabled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ExitButtonActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -156,8 +155,8 @@ public class LoginForm extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(PasswordLabel)
-                            .addComponent(UsernameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel34)
+                            .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel31)
@@ -171,10 +170,10 @@ public class LoginForm extends javax.swing.JFrame {
                             .addComponent(ErrorLabel))
                         .addGap(73, 73, 73))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addComponent(WelcomeLabel)
+                        .addComponent(jLabel29)
                         .addGap(161, 161, 161))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(142, 142, 142)
@@ -187,9 +186,9 @@ public class LoginForm extends javax.swing.JFrame {
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(WelcomeLabel)
+                .addComponent(jLabel29)
                 .addGap(31, 31, 31)
                 .addComponent(jLabel30)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -197,11 +196,11 @@ public class LoginForm extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(UserTF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(UsernameLabel))
+                    .addComponent(jLabel33))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(PassTF, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PasswordLabel))
+                    .addComponent(jLabel34))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel31)
                 .addGap(18, 18, 18)
@@ -222,12 +221,12 @@ public class LoginForm extends javax.swing.JFrame {
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
         jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102), 2));
 
-        IconLabel.setForeground(new java.awt.Color(0, 51, 102));
-        IconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorcycleIMS/resources/nuts.jpg"))); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(0, 51, 102));
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorcycleIMS/resources/nuts.jpg"))); // NOI18N
 
-        LogoLabel.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
-        LogoLabel.setForeground(new java.awt.Color(0, 0, 102));
-        LogoLabel.setText("REVEL");
+        jLabel36.setFont(new java.awt.Font("Ink Free", 1, 48)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(0, 0, 102));
+        jLabel36.setText("REVEL");
 
         jLabel37.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(0, 153, 153));
@@ -237,25 +236,18 @@ public class LoginForm extends javax.swing.JFrame {
         jLabel38.setForeground(new java.awt.Color(0, 153, 153));
         jLabel38.setText("Management System");
 
-        CopyrightLabel.setText("Copyright © REVEL IMS");
-
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(IconLabel)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LogoLabel)
-                            .addComponent(jLabel37)
-                            .addComponent(jLabel38)))
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addGap(118, 118, 118)
-                        .addComponent(CopyrightLabel)))
+                    .addComponent(jLabel36)
+                    .addComponent(jLabel37)
+                    .addComponent(jLabel38))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
@@ -263,16 +255,14 @@ public class LoginForm extends javax.swing.JFrame {
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(IconLabel)
+                    .addComponent(jLabel35)
                     .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(LogoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel37)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel38)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 297, Short.MAX_VALUE)
-                .addComponent(CopyrightLabel)
-                .addGap(24, 24, 24))
+                .addContainerGap(337, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 380, 480));
@@ -284,33 +274,24 @@ public class LoginForm extends javax.swing.JFrame {
     private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox16ActionPerformed
-    
-    /**
-     * Handles the continue button action which is the login button.
-     * Validates the username and password
-     * input and navigates to the main screen if credentials are correct.
-     * Displays appropriate error messages otherwise.
-     * @param evt The action event triggered by the login button.
-     */
-    private void ContButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContButtonActionPerformed
 
-        // Gets username and password and checks if they are empty
+    private void ContButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContButtonActionPerformed
+        // TODO add your handling code here:
         if (UserTF.getText().equals("")||PassTF.getText().equals(""))
         {
-            // Set label to display error message
             ErrorLabel.setText("Please enter your username and password.");
+            //JOptionPane.showMessageDialog(null,"Please fill out all the necessary fields!");
         }
-        // Gets username and password and checks if it equals to the correct credentials
         else if (UserTF.getText().equals("admin")&&PassTF.getText().equals("admin"))
         {
-            JOptionPane.showMessageDialog(null,"Login Successful"); // Show message about successful login
-            this.dispose();// Close LoginForm form
-            new Dashboard().setVisible(true); // Create new Dashboard form
+            JOptionPane.showMessageDialog(null,"Login Successful");
+            this.dispose(); 
+            new Dashboard().setVisible(true); 
         }
         else
         {
-            // Set label to display error message
             ErrorLabel.setText("Username and password mismatch.");
+            //JOptionPane.showMessageDialog(null,"Wrong Username or Password!");
         }
     }//GEN-LAST:event_ContButtonActionPerformed
 
@@ -322,14 +303,8 @@ public class LoginForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_UserTFActionPerformed
 
-    /**
-     * Handles the show password check box action .
-     * Makes the password visible to the user
-     */
     private void ShowPassCBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowPassCBActionPerformed
-        /** Checks if the checkbox is selected.
-         * If true show password as character else show as "*"
-         */
+        // TODO add your handling code here:
         if(ShowPassCB.isSelected())
         {
             PassTF.setEchoChar((char)0);
@@ -345,13 +320,10 @@ public class LoginForm extends javax.swing.JFrame {
         
     }//GEN-LAST:event_goToRegActionPerformed
 
-    /*
-     * Exit button when pressed closes the form
-     */
-    private void ExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButtonActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-    }//GEN-LAST:event_ExitButtonActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -391,22 +363,21 @@ public class LoginForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ContButton;
-    private javax.swing.JLabel CopyrightLabel;
     private javax.swing.JLabel ErrorLabel;
-    private javax.swing.JButton ExitButton;
-    private javax.swing.JLabel IconLabel;
-    private javax.swing.JLabel LogoLabel;
     private javax.swing.JPasswordField PassTF;
-    private javax.swing.JLabel PasswordLabel;
     private javax.swing.JCheckBox ShowPassCB;
     private javax.swing.JTextField UserTF;
-    private javax.swing.JLabel UsernameLabel;
-    private javax.swing.JLabel WelcomeLabel;
     private javax.swing.JButton goToReg;
+    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox16;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JPanel jPanel8;

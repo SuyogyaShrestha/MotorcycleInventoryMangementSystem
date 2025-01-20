@@ -11,51 +11,41 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Suyogya Shrestha
+ * @author USER
  */
 public class LoadingScreen extends javax.swing.JFrame {
-    
     private Timer timer; 
-    private int progress = 0; 
+     private int progress = 0; 
 
     /**
-     * Creates new form LoadingScreen
+     * Creates new form mainScreen
      */
     public LoadingScreen() {
         initComponents();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        startLoading(); // Show loading screen and start progress
+        startLoading();
     }
     
-    /**
-     * Creates the loading progress. Updates the progress bar  
-     * incrementally and switches to the login screen after
-     * completion.
-     */
+
     private void startLoading() {
-        // timer variable with 50ms delay
         timer = new Timer(50, new ActionListener() { 
             @Override
             public void actionPerformed(ActionEvent e) {
-                progress += 5; // progress variaable increased by 5 every 50ms
+                progress += 10; 
                 
-                PBar.setValue(progress); // set progress bar value
-                LoadingLabel.setText("Loading... " + progress + "%");// visible progress in percentage
+                PBar.setValue(progress); 
+                LoadingLabel.setText("Loading... " + progress + "%");
 
                 
                 if (progress >= 100) {
                     timer.stop(); 
-                    switchToLoginScreen(); // Switch to LoginScreen form
+                    switchToLoginScreen(); 
                 }
             }
         });
         timer.start(); 
     }
-    
-    /**
-     * Closes the LoadingScreen form and creates new
-     * LoginForm form
-     */
+
     private void switchToLoginScreen() {
         this.dispose(); 
         new LoginForm().setVisible(true); 
@@ -71,12 +61,12 @@ public class LoadingScreen extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        LogoLabel = new javax.swing.JLabel();
-        TextLabel1 = new javax.swing.JLabel();
-        TextLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         PBar = new javax.swing.JProgressBar();
         LoadingLabel = new javax.swing.JLabel();
-        IconLabel = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -85,22 +75,22 @@ public class LoadingScreen extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 102), 3));
 
-        LogoLabel.setFont(new java.awt.Font("Ink Free", 1, 60)); // NOI18N
-        LogoLabel.setForeground(new java.awt.Color(0, 0, 102));
-        LogoLabel.setText("REVEL");
+        jLabel1.setFont(new java.awt.Font("Ink Free", 1, 60)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 102));
+        jLabel1.setText("REVEL");
 
-        TextLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        TextLabel1.setText("Motorcycle Parts & Accessories");
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setText("Motorcycle Parts & Accessories");
 
-        TextLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        TextLabel2.setText("Management System");
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel4.setText("Management System");
 
         PBar.setBackground(new java.awt.Color(204, 204, 204));
         PBar.setForeground(new java.awt.Color(0, 102, 153));
 
         LoadingLabel.setText("Loading...");
 
-        IconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorcycleIMS/resources/loadingmotor.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/motorcycleIMS/resources/loadingmotor.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -110,12 +100,12 @@ public class LoadingScreen extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(127, 127, 127)
-                        .addComponent(IconLabel)
+                        .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TextLabel1)
-                            .addComponent(LogoLabel)
-                            .addComponent(TextLabel2)))
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel4)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(194, 194, 194)
                         .addComponent(PBar, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -130,16 +120,16 @@ public class LoadingScreen extends javax.swing.JFrame {
                 .addGap(0, 103, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(LogoLabel)
+                        .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TextLabel1)
+                        .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TextLabel2)
+                        .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(LoadingLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(IconLabel)
+                        .addComponent(jLabel5)
                         .addGap(50, 50, 50)))
                 .addComponent(PBar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(78, 78, 78))
@@ -196,12 +186,12 @@ public class LoadingScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel IconLabel;
     private javax.swing.JLabel LoadingLabel;
-    private javax.swing.JLabel LogoLabel;
     private javax.swing.JProgressBar PBar;
-    private javax.swing.JLabel TextLabel1;
-    private javax.swing.JLabel TextLabel2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

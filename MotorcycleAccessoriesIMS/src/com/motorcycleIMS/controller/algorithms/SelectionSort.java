@@ -4,12 +4,12 @@
  */
 package com.motorcycleIMS.controller.algorithms;
 
-import com.motorcycleIMS.model.ItemsModel;
+import com.motorcycleIMS.model.Items;
 import java.util.ArrayList;
 
 /**
  *
- * @author Suyogya Shrestha
+ * @author USER
  */
 public class SelectionSort {
     
@@ -19,9 +19,9 @@ public class SelectionSort {
     }
     
     
-    public ArrayList<ItemsModel> sortByItemCode(ArrayList<ItemsModel> unsortedData, boolean isDesc) {
+    public ArrayList<Items> sortByItemCode(ArrayList<Items> unsortedData, boolean isDesc) {
         
-        ArrayList<ItemsModel> dataToSort = new ArrayList(); 
+        ArrayList<Items> dataToSort = new ArrayList(); 
         dataToSort.addAll(unsortedData);
         
         for (int i = 0; i < dataToSort.size() - 1; i++) {
@@ -40,16 +40,16 @@ public class SelectionSort {
                 }
             }
             //swap
-            ItemsModel tempItem = dataToSort.get(minIndex);
+            Items tempItem = dataToSort.get(minIndex);
             dataToSort.set(minIndex, dataToSort.get(i));
             dataToSort.set(i, tempItem);
         }
         return dataToSort;
     }
     
-    public ArrayList<ItemsModel> sortByName(ArrayList<ItemsModel> unsortedData, boolean isDesc) {
+    public ArrayList<Items> sortByName(ArrayList<Items> unsortedData, boolean isDesc) {
         
-        ArrayList<ItemsModel> dataToSort = new ArrayList(); 
+        ArrayList<Items> dataToSort = new ArrayList(); 
         dataToSort.addAll(unsortedData);
         
         for (int i = 0; i < dataToSort.size() - 1; i++) {
@@ -68,16 +68,16 @@ public class SelectionSort {
                 }
             }
             //swap
-            ItemsModel tempItem = dataToSort.get(minIndex);
+            Items tempItem = dataToSort.get(minIndex);
             dataToSort.set(minIndex, dataToSort.get(i));
             dataToSort.set(i, tempItem);
         }
         return dataToSort;
     }
     
-    public ArrayList<ItemsModel> sortByPrice(ArrayList<ItemsModel> unsortedData, boolean isDesc) {
+    public ArrayList<Items> sortByPrice(ArrayList<Items> unsortedData, boolean isDesc) {
         
-        ArrayList<ItemsModel> dataToSort = new ArrayList(); 
+        ArrayList<Items> dataToSort = new ArrayList(); 
         dataToSort.addAll(unsortedData);
         
         for (int i = 0; i < dataToSort.size() - 1; i++) {
@@ -96,7 +96,7 @@ public class SelectionSort {
                 }
             }
             //swap
-            ItemsModel tempItem = dataToSort.get(minIndex);
+            Items tempItem = dataToSort.get(minIndex);
             dataToSort.set(minIndex, dataToSort.get(i));
             dataToSort.set(i, tempItem);
         }

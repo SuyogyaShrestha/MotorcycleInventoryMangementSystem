@@ -4,16 +4,15 @@
  */
 package com.motorcycleIMS.controller.algorithms;
 
-import com.motorcycleIMS.model.ItemsModel;
+import com.motorcycleIMS.model.Items;
 import java.util.ArrayList;
 
 /**
  *
- * @author Suyogya Shrestha
+ * @author USER
  */
-
 public class BinarySearch {
-     public ItemsModel searchByItemCode(int searchValue, ArrayList<ItemsModel> itemList,
+     public Items searchByItemCode(int searchValue, ArrayList<Items> itemList,
             int low, int high) {
         
         while(low <= high){
